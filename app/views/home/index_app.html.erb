@@ -1,0 +1,11 @@
+<h1>app包</h1>
+
+<% @appsofts.each do |appsoft| %>
+<div>
+  <a href="detail/<%= appsoft.id %>"><%= appsoft.name%></a>
+  <%= appsoft.apk_path%>
+</div>
+<% end %>
+<br />
+
+

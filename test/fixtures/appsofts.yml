@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  size: MyString
+  package_name: MyString
+  icon_path: MyString
+  brief: MyString
+  author: MyString
+  language: MyString
+  uptime: 
+  fever: 1
+  type: MyString
+  apk_path: MyString
+  version: MyString
+  small_sdk: MyString
+
+two:
+  name: MyString
+  size: MyString
+  package_name: MyString
+  icon_path: MyString
+  brief: MyString
+  author: MyString
+  language: MyString
+  uptime: 
+  fever: 1
+  type: MyString
+  apk_path: MyString
+  version: MyString
+  small_sdk: MyString

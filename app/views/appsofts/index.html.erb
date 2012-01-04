@@ -1,0 +1,43 @@
+<h1>Listing appsofts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Size</th>
+    <th>Package name</th>
+    <th>Brief</th>
+    <th>Author</th>
+    <th>Language</th>
+    <th>Fever</th>
+    <th>App Type</th>
+    <th>Apk path</th>
+    <th>Version</th>
+    <th>Small sdk</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @appsofts.each do |appsoft| %>
+  <tr>
+    <td><%= appsoft.name %></td>
+    <td><%= appsoft.size %></td>
+    <td><%= appsoft.package_name %></td>
+    <td><%= appsoft.brief %></td>
+    <td><%= appsoft.author %></td>
+    <td><%= appsoft.language %></td>
+    <td><%= appsoft.fever %></td>
+    <td><%= appsoft.app_type %></td>
+    <td><%= appsoft.apk_path %></td>
+    <td><%= appsoft.version %></td>
+    <td><%= appsoft.small_sdk %></td>
+    <td><%= link_to 'Show', appsoft %></td>
+    <td><%= link_to 'Edit', edit_appsoft_path(appsoft) %></td>
+    <td><%= link_to 'Destroy', appsoft, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Appsoft', new_appsoft_path %>

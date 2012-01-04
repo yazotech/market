@@ -1,0 +1,65 @@
+<%= form_for(@appsoft,:html => {:multipart => true} ) do |f| %>
+  <% if @appsoft.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@appsoft.errors.count, "error") %> prohibited this appsoft from being saved:</h2>
+
+      <ul>
+      <% @appsoft.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :package_name %><br />
+    <%= f.text_field :package_name %>
+  </div>
+  <div class="field">
+    <%= f.label :brief %><br />
+    <%= f.text_field :brief %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :fever %><br />
+    <%= f.text_field :fever %>
+  </div>
+  <div class="field">
+    <%= f.label :app_type %><br />
+    <%= f.text_field :app_type %>
+  </div>
+  <div class="field">
+    <%= f.label :apk_path %><br />
+    <%= file_field_tag "apk_path" %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :small_sdk %><br />
+    <%= f.text_field :small_sdk %>
+  </div>
+  <div class="field">
+    <%= f.label :icon_path %><br />
+    <%= file_field_tag "icon_path" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

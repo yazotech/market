@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @appsoft.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @appsoft.size %>
+</p>
+
+<p>
+  <b>Package name:</b>
+  <%= @appsoft.package_name %>
+</p>
+
+<p>
+  <b>Brief:</b>
+  <%= @appsoft.brief %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @appsoft.author %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @appsoft.language %>
+</p>
+
+<p>
+  <b>Fever:</b>
+  <%= @appsoft.fever %>
+</p>
+
+<p>
+  <b>Apptype:</b>
+  <%= @appsoft.app_type %>
+</p>
+
+<p>
+  <b>Apk path:</b>
+  <%= @appsoft.apk_path %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @appsoft.version %>
+</p>
+
+<p>
+  <b>Small sdk:</b>
+  <%= @appsoft.small_sdk %>
+</p>
+
+
+<%= link_to 'Edit', edit_appsoft_path(@appsoft) %> |
+<%= link_to 'Back', appsofts_path %>
